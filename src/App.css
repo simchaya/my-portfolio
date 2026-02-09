@@ -13,29 +13,46 @@
 
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background: #f5f5f5;
-  border-radius: 8px;
+  padding: 80px 20px;           /* Changed from 60px to 80px */
+  background: #ffffff;          /* Changed from #f5f5f5 to white */
   margin-bottom: 40px;
+  /* Removed border-radius */
+}
+
+.hero-content {                 /* NEW SECTION */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-photo {                /* NEW SECTION */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 4px solid #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
   font-size: 2.5em;
   color: #333;
   margin-bottom: 10px;
+  font-weight: 600;             /* NEW */
 }
 
 .hero h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;             /* Changed from 1.5em */
   color: #666;
   margin-bottom: 20px;
+  font-weight: 400;             /* NEW */
 }
 
 .hero p {
   font-size: 1.1em;
   color: #555;
-  max-width: 600px;
-  margin: 0 auto;
+  line-height: 1.6;             /* NEW */
+  /* Removed max-width and margin (now handled by .hero-content) */
 }
 
 .projects-section {
